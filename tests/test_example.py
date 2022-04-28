@@ -3,4 +3,4 @@ def test_first(driver):
     driver.get("http://192.168.0.15:8081/")
     # Проверить заголовок
     assert "Your Store" == driver.title
-
+    driver.save_screenshot("test.png")
